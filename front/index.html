@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <header>
+        <h1> Resumo Pessoal</h1>
+    </header>
+
+    <main>
+        <form id="meu-formulario">
+            <h2>Cadastro de infos</h2>
+            <div class="group-labels">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" placeholder="nome" class="fields" />
+
+            </div>
+
+            <div class="group-labels">
+                <label for="Inicio do curso">Inicio do curso</label>
+                <input type="date" name="inicio" placeholder="inicio do curso" class="fields" />
+                
+            </div>
+
+            
+            <div class="group-labels">
+                
+                <label for="Telefone">Telefone</label>
+                <input type="tel" name="telefone" placeholder="(xx) XXXXX-XXXX" class="fields" />
+            </div>
+
+            
+            <div class="group-labels">
+                <label for="linkedin">Linkedin</label>
+                <input type="url" name="linkedin" placeholder="linkedin" class="fields" />
+                
+            </div>
+
+            <div class="group-labels">
+                
+                <label for="email">E-mail</label>
+                <input type="text" name="email" placeholder="E-mail" class="fields" />
+            </div>
+
+            <div class="group-labels">
+                <label for="signo">Signo</label>
+                <input list="signos-list" name="signo" class="fields" placeholder="Selecione um signo">
+                <datalist id="signos-list" class="fields">
+                    <option value="aries">Áries</option>
+                    <option value="touro">Touro</option>
+                    <option value="gemeos">Gêmeos</option>
+                    <option value="cancer">Câncer</option>
+                    <option value="leao">Leão</option>
+                    <option value="virgem">Virgem</option>
+                    <option value="libra">Libra</option>
+                    <option value="escorpiao">Escorpião</option>
+                    <option value="sagitario">Sagitário</option>
+                    <option value="capricornio">Capricórnio</option>
+                    <option value="aquario">Aquário :C</option>
+                    <option value="peixes">Peixes</option>
+                </datalist>
+            </div>
+
+            <div class="div-buttons">
+                <button type="submit" id="submit-button" class="form-button">Enviar</button>
+                <button type="reset" class="form-button">Limpar</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>Página desenvolvida por @fernandolacerda</footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
