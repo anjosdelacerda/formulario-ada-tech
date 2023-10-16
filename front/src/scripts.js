@@ -1,3 +1,4 @@
+import axios from "axios"
 
 function obterDadosDoFormulario() {
     const formulario = document.getElementById("meu-formulario");
@@ -16,6 +17,14 @@ function obterDadosDoFormulario() {
     }
   
     console.log(dadosDoFormulario);
+
+    axios.post('http://localhost:3000/aluno', dadosDoFormulario)
+    .then(response => {
+      console.log('Solicitação POST bem-sucedida:', response.data);
+    })
+    .catch(error => {
+      console.error('Erro na solicitação POST:', error);
+    });
   
   }
   
@@ -24,3 +33,4 @@ function obterDadosDoFormulario() {
     obterDadosDoFormulario();
   });
   
+
